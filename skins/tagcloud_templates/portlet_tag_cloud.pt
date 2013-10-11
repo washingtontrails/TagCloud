@@ -1,0 +1,28 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="TagCloud">
+<body>
+
+<div metal:define-macro="portlet"
+     tal:condition="python:test(template.getId()!='tags')" >
+
+    <dl class="portlet" id="portlet-tag-cloud">
+        <dt class="portletHeader">
+          <a i18n:translate="tag_cloud"
+             href="#"
+             tal:attributes="href string:${context/portal_url}/tags;">
+              Tag Cloud
+          </a>
+        </dt>
+
+        <dd class="portletItem even">
+
+          <metal:cloud use-macro="context/tagcloud_macros/macros/cloud" />
+
+        </dd>
+    </dl>
+
+</div>
+
+</body>
+</html>

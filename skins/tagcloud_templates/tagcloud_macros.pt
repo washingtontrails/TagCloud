@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      i18n:domain="TagCloud">
+
+<body>
+
+<metal:cloud define-macro="cloud"
+             tal:define="items context/tagcloud_tool/getCloud;
+                         portal_url context/portal_url;
+                         url_quote nocall:modules/Products/PythonScripts/standard/url_quote;"
+             tal:condition="items">
+
+    <tal:tags tal:repeat="item items">
+        <a href="#"
+           class="tagSize"
+           tal:content="item/tag"
+           tal:attributes="href python:'%s/search?Subject=%s&amp;review_state=published' % (portal_url, url_quote(item['tag']));
+                           class python:'tagSize%s' % item['size'];">
+              Tag
+        </a>
+    </tal:tags>
+
+</metal:cloud>
+
+</body>
+</html>

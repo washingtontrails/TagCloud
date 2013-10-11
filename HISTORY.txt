@@ -1,0 +1,33 @@
+Changelog for TagCloud
+
+    (name of developer listed in brackets)
+
+TagCloud 0.4 - SVN/UNRELEASED
+
+    - Added tool's marker interface
+    - Enhanced test suite
+      [hvelarde]
+
+TagCloud 0.3 - Release Candidate
+
+    - Ticket #335: Add test suite to TagCloud
+    - Ticket #366: Prepare the product for i18n
+    - Ticket #367: Create Spanish translation
+    - RAM Cache Manager associated with portlet added at installation time to reduce CPU load
+    - Code refactoring and clean up
+      [hvelarde]
+
+TagCloud 0.2.1 - Release Candidate
+
+    - Fixed a bug on catalog search: queries were using "Type" instead of "portal_type" for friendly_types.
+      [hvelarde]
+
+TagCloud 0.2 - Unreleased
+
+    - Changes on getTagSize.py and portlet_tag_cloud.pt to enhance performance.
+      [hvelarde]
+
+TagCloud 0.1 - Unreleased
+
+    - Generated skeleton product from DIYPloneStyle.
+      [hvelarde]

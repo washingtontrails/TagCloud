@@ -1,0 +1,89 @@
+/*
+  This file is based on the ploneCustom.css.dtml shipped with Plone.
+
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+#tag-cloud {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: &dtml-evenRowBackgroundColor;;
+    border: 1px solid &dtml-globalBorderColor;;
+    line-height: 2.5em;
+    text-transform: lowercase;
+}
+
+#tag-cloud a {
+    margin: 0.25em;
+    text-decoration: none;
+}
+
+#tag-cloud a:hover {
+    background-color: &dtml-globalFontColor;;
+    color: &dtml-backgroundColor;;
+}
+
+.tagSize1 {
+    font-size: small;
+    white-space: nowrap;
+}
+
+.tagSize2 {
+    font-size: medium;
+    white-space: nowrap;
+}
+
+.tagSize3 {
+    font-size: large;
+}
+
+.tagSize4 {
+    font-size: x-large;
+}
+
+.tagSize5 {
+    font-size: xx-large;
+}
+
+/* tag cloud portlet start */
+
+#portlet-tag-cloud .portletItem {
+    line-height: 2.5em;
+    text-transform: lowercase;
+}
+
+#portlet-tag-cloud .portletItem a {
+    margin: 0.25em;
+    text-decoration: none;
+}
+
+#portlet-tag-cloud .portletItem a:hover {
+    background-color: &dtml-globalBackgroundColor;;
+    color: &dtml-globalFontColor;;
+}
+
+#portlet-tag-cloud .tagSize1 {
+    overflow: hidden;
+}
+
+#portlet-tag-cloud .tagSize2 {
+    overflow: hidden;
+}
+
+#portlet-tag-cloud .tagSize3 {
+}
+
+#portlet-tag-cloud .tagSize4 {
+}
+
+#portlet-tag-cloud .tagSize5 {
+}
+
+/* tag cloud portlet end */
+
+/* </dtml-with> */
+
+/* Latest version of the documentation on pre-defined properties from Plone 
+   can be found in CMFPlone/skins/plone_styles/ploneCustom.css.dtml */
+
